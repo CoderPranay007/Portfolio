@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio">
+  <style>
+    :root{--bg:#1d264a;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#d9ccc6 0%, #97b6d8 60%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:34px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:44px;height:44px;border-radius:10px;background:#2a6266;display:grid;place-items:center;font-weight:700}
+    nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:24px}
+    .hero-card{background:var(--card);padding:28px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    h1{font-size:clamp(28px,4vw,40px);margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .profile-card{padding:18px;border-radius:12px;background-image:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);text-align:center}
+    .avatar{width:120px;height:120px;border-radius:14px;display:inline-block;background:linear-gradient(135deg,#334155,#0ea5a4);margin-bottom:12px}
+    .section{margin-top:36px}
+    .grid{display:grid;gap:18px}
+    .two{grid-template-columns:repeat(2,1fr)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
+    .project{background:#071226;padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .social a{margin-left:12px;color:var(--muted);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">PK</div>
+        <div>
+          <div style="font-weight:800; color: #334155;">Pranay Khera</div>
+          <div style="font-size:12px;color:var(--muted); color: #334155;">Student • Web Developer</div>
+        </div>
+      </div>
+      <nav >
+        <a href="#home" style="color: #0b2a11;">Home</a>
+        <a href="#about" style="color:#0b2a11 ;">About</a>
+        <a href="#skills" style="color: #0b2a11;">Skills</a>
+        <a href="#projects" style="color: #0b2a11;">Projects</a>
+        <a href="#contact" style="color: #0b2a11;">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="hero">
+      <div>
+        <div class="hero-card">
+          <h1>Hi, I’m <span style="color:var(--accent)">Pranay Khera</span></h1>
+          <p class="lead">First-year CSE student building clean web experiences. I love converting ideas into functioning websites and learning new technologies every day.</p>
+          <div class="section" id="about">
+            <h2 style="margin-bottom:8px">About Me</h2>
+            <p style="color:var(--muted);margin-top:0">I am a motivated computer science student interested in front-end development, algorithms, and software engineering. I enjoy working on small projects that solve real problems and help me learn.</p>
+          </div>
+
+          <div class="section" id="skills">
+            <h3 style="margin-bottom:8px">Education & Skills</h3>
+            <div class="grid two">
+              <div class="card" style="background:transparent">
+                <strong>Education</strong>
+                <p style="color:var(--muted);margin:6px 0 0">Delhi Technological University<br>BTech-Computer Science<br>1st Year</p>
+              </div>
+              <div>
+                <strong>Technical Skills</strong>
+                <div class="skills" style="margin-top:8px">
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">C</span>
+                  <span class="chip">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <img src="Photo.jpg" class="avatar">
+        <h3 style="margin:6px 0; color: #300118;">Pranay Khera</h3>
+        <div style="color:var(--muted);font-weight:600; color: #300118;">Frontend Developer • Student</div>
+      </aside>
+    </main>
+
+    <section class="section" id="projects">
+      <h2 style="color: #05183b;">Projects / Portfolio</h2>
+
+      <div class="projects">
+        <article class="project">
+          <h3>Portfoilio website</h3>
+          <p style="color:var(--muted);margin:0 0 10px">A responsive website built with HTML & CSS. Highlights: responsive layout, accessible markup.</p>
+        </article>
+
+        <article class="project">
+          <h3>Mini Project</h3>
+          <p style="color:var(--muted);margin:0 0 10px">Prime finder app/webapp using Python and TK inter</p>
+          <a href="https://learningpython-nq87zxegpern4rtzxqvgyj.streamlit.app/" target="_blank" style="font-weight:700;color:var(--accent);text-decoration:none">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 style="color: #05183b;">Contact</h2>
+        <div style="min-width:240px;color:var(--muted)">
+          <p style="color: #300118;"><strong>Email</strong><br>pranaykhera.pk@gmail.com</p>
+          <p style="color:#300118 ;"><strong>GitHub</strong><br><a href="https://github.com/CoderPranay007" style="color:var(--accent);text-decoration:none; color:#300118;">github.com/CoderPranay007</a></p>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
